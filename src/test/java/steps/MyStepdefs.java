@@ -31,7 +31,6 @@ public class MyStepdefs {
 
     @И("^Нажимаю Кнопу Найти$")
     public void нажимаюКнопуНайти()  {
-
         $x("//input[@name='q']").sendKeys(Keys.ENTER);
 }
 
@@ -73,7 +72,7 @@ public class MyStepdefs {
         Configuration.browser = "chrome";
         WebDriverManager.chromedriver().version("86").setup();
         open("https://yandex.ru");
-     //   $x("(//input[contains(class, input__control)])[4]");
+
 
     }
 

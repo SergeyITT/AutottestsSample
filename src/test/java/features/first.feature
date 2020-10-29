@@ -2,17 +2,17 @@
 
 Feature: First test
   @smoke
-  Scenario: Test
-   When I open yandex ru
-   Then I type "Simple sample" in the search string on yandex page
+  Scenario: Test yandex ru
+   Given I open yandex ru
+   When I type "Simple sample" in the search string on yandex page
    And Push Enter Button on yandex page
-   And I check that the list of results on yandex page is not empty
+   Then I check that the list of results on yandex page is not empty
 
-   Scenario: Test
-    When I open google com
-    Then I type "Simple sample" in the search string
+   Scenario: Test google com
+    Given I open google com
+    When I type "Simple sample" in the search string
     And Push Enter Button
-    And I check that the list of results is not empty
+    Then I check that the list of results is not empty
 
 
 
