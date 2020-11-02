@@ -1,7 +1,7 @@
 # language: en
 
 Feature: First test
-  @smoke
+
   Scenario: Try to start the app
    Given Start the app
    # When I type "Simple sample" in the search string on yandex page

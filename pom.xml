@@ -100,7 +100,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>4.13.0</version>
+            <version>5.15.1</version>
         </dependency>
 
         <dependency>

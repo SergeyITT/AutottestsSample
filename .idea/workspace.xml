@@ -20,7 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Add mobile">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/Actions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/mobile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/mobile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MyStepDefsMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MyStepDefsMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/AppiumSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepDefsMobile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/MyStepDefsMobile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +86,7 @@
       </method>
     </configuration>
     <configuration name="RunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutottestsSample" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
@@ -126,6 +140,7 @@
       <workItem from="1603885282707" duration="2346000" />
       <workItem from="1604306754725" duration="316000" />
       <workItem from="1604307131958" duration="4060000" />
+      <workItem from="1604314069372" duration="11765000" />
     </task>
     <task id="LOCAL-00001" summary="Add mobile">
       <created>1604310661259</created>
@@ -168,117 +183,57 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="845" y="382" key="#Notifications/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604311196587" />
-    <state x="563" y="138" key="#RunTest" timestamp="1604310542540">
+    <state x="563" y="138" key="#RunTest" timestamp="1604316876159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="563" y="138" key="#RunTest/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310542540" />
+    <state x="563" y="138" key="#RunTest/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604316876159" />
+    <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604322261313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604322261313" />
+    <state x="827" y="270" width="664" height="500" key="EnvironmentVariablesDialog" timestamp="1604314717956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="827" y="270" width="664" height="500" key="EnvironmentVariablesDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604314717956" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604315319090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315319090" />
     <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604310942570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310942570" />
-    <state width="1854" height="215" key="GridCell.Tab.0.bottom" timestamp="1604310649342">
+    <state width="1854" height="312" key="GridCell.Tab.0.bottom" timestamp="1604326964577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="215" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310649342" />
-    <state width="1854" height="215" key="GridCell.Tab.0.center" timestamp="1604310649342">
+    <state width="1854" height="312" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964577" />
+    <state width="1854" height="312" key="GridCell.Tab.0.center" timestamp="1604326964576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="215" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310649342" />
-    <state width="1854" height="215" key="GridCell.Tab.0.left" timestamp="1604310649341">
+    <state width="1854" height="312" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964576" />
+    <state width="1854" height="312" key="GridCell.Tab.0.left" timestamp="1604326964576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="215" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310649341" />
-    <state width="1854" height="215" key="GridCell.Tab.0.right" timestamp="1604310649342">
+    <state width="1854" height="312" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964576" />
+    <state width="1854" height="312" key="GridCell.Tab.0.right" timestamp="1604326964576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="215" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310649342" />
+    <state width="1854" height="312" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964576" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1604315393315">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315393315" />
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604310674103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310674103" />
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604310821919">
+    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604314396361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310821919" />
+    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604314396361" />
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604308154995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604308154995" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>AllureCucumberSelenide</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: cglib:cglib-nodep:2.2</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
