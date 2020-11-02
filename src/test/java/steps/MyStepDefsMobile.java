@@ -1,6 +1,5 @@
 package steps;
 
-import Setup.AppiumSetup;
 import com.codeborne.selenide.*;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -22,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class MyStepDefsMobile extends AppiumSetup {
+public class MyStepDefsMobile {
 
    AppiumDriver<MobileElement> driver;
    String appPackage = "ru.kinopoisk.dev";
