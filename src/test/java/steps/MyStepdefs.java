@@ -41,7 +41,7 @@ public class MyStepdefs {
     @When("^I open google com$")
     public void iOpenGoogleCom() {
         Configuration.browser = "chrome";
-        WebDriverManager.chromedriver().version("86").setup();
+        WebDriverManager.chromedriver().browserVersion("86").setup();
         open("https://yandex.ru");
 
     }
@@ -66,7 +66,7 @@ public class MyStepdefs {
     @When("^I open yandex ru$")
     public void iOpenYandexRu(){
         Configuration.browser = "chrome";
-        WebDriverManager.chromedriver().version("86").setup();
+        WebDriverManager.chromedriver().browserVersion("86").setup();
         open("https://yandex.ru");
 
 
