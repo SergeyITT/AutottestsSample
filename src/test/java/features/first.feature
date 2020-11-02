@@ -2,17 +2,11 @@
 
 Feature: First test
   @smoke
-  Scenario: Test yandex ru
-   Given I open yandex ru
-   When I type "Simple sample" in the search string on yandex page
-   And Push Enter Button on yandex page
-   Then I check that the list of results on yandex page is not empty
+  Scenario: Try to start the app
+   Given Start the app
+   # When I type "Simple sample" in the search string on yandex page
+   # Then I check that the list of results on yandex page is not empty
 
-   Scenario: Test google com
-    Given I open google com
-    When I type "Simple sample" in the search string
-    And Push Enter Button
-    Then I check that the list of results is not empty
 
 
 

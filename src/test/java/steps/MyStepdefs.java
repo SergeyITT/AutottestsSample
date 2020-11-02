@@ -22,8 +22,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class MyStepdefs {
 
 
-
-
     @То("^Я ввожу \"([^\"]*)\" поле поиска$")
     public void яВвожуПолеПоиска(String text)  {
         $x("//input[@name='q']").sendKeys(text);
@@ -39,8 +37,6 @@ public class MyStepdefs {
      //   Configuration.browser = "chrome";
         open("https://google.com");
     }
-
-
 
     @When("^I open google com$")
     public void iOpenGoogleCom() {
