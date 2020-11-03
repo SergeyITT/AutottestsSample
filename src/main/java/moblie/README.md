@@ -58,3 +58,8 @@
 с рабочего столя Пользователя, настроить можно тут: ***\AutottestsSample\src\test\java\steps\MyStepDefsMobile.java*** - **String pathToApp**)
 9. Запустить файл **RunTest** (Правой кнопкой -> Run) (Должно запуститься приложение, **Appium** попытается несколько раз проскролить экран вправо. 
 Чтобы это увидеть, можно включить отображение нажатий в меню "Для разработчиков" на девайсе)
+
+# Structure
+#### Comming soon!
+# Write practice
+#### Comming soon!
