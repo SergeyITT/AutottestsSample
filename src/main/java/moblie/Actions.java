@@ -20,7 +20,7 @@ public abstract class Actions {
 
     public static void swipeScreen(Direction dir) {
         AppiumSetup appiumSetup = AppiumSetup.getInstance(); // Получаем или создаем AppiumSetup (драйвер)
-        System.out.println("swipeScreen(): dir: '" + dir + "'"); // Логирование событий
+        System.out.println("swipeScreen(): dir: '" + dir + "'"); // Логирование событий в консоль
 
         final int ANIMATION_TIME = 300;
         final int PRESS_TIME = 500;
@@ -79,6 +79,7 @@ public abstract class Actions {
     TODO: Выяснить на сколько такое решение костыльное и как его улучшить
     TODO: Переписать и перегрузить, в теории может пригодиться метод "Ждать, пока <условие>"
      */
+
     public static void timeOut (int sec){
         try {
             TimeUnit.SECONDS.sleep(sec);

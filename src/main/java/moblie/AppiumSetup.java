@@ -25,10 +25,11 @@ public class AppiumSetup {
 
     /*
     Создаем singleton:
-    Теперь вместо new AppiumSetup() юзаем AppiumSetup.getInstance() там, где нужно получить экземпляр класса.
+    Теперь вместо new AppiumSetup() юзаем AppiumSetup.getInstance() там, где нужно получить экземпляр класса AppiumSetup
     Теперь экземпляр класса не будет каждый раз создаваться заново, а будет использовать старый, если он уже
-    был создан ранее.
+    был создан ранее
     */
+
     private static AppiumSetup instance; // Создаем экземпляр класса AppiumSetup
     private AppiumSetup(){} // Создаем пустой конструктор
     public static AppiumSetup getInstance(){
@@ -63,11 +64,6 @@ public class AppiumSetup {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
     public void quitDriver(){
-
-        /*
-        Выключаем драйвер (Приложение закрывается)
-         */
-
-        driver.quit();
+        driver.quit(); // Выключаем драйвер (Приложение закрывается)
     }
 }
