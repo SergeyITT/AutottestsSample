@@ -19,21 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Add mobile">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/Actions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Refactor mobile classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/Settings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/mobile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/mobile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MyStepDefsMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MyStepDefsMobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Setup/AppiumSetup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepDefsMobile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/MyStepDefsMobile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +39,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubProjectSettings">
-    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="main" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="feature" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="SergeyITT" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="AutottestsSample" />
   </component>
@@ -140,7 +128,8 @@
       <workItem from="1603885282707" duration="2346000" />
       <workItem from="1604306754725" duration="316000" />
       <workItem from="1604307131958" duration="4060000" />
-      <workItem from="1604314069372" duration="11765000" />
+      <workItem from="1604314069372" duration="12482000" />
+      <workItem from="1604390894155" duration="2230000" />
     </task>
     <task id="LOCAL-00001" summary="Add mobile">
       <created>1604310661259</created>
@@ -156,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604310912447</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor mobile classes">
+      <created>1604327224110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604327224110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add mobile" />
+    <MESSAGE value="Refactor mobile classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor mobile classes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="382" key="#Notifications" timestamp="1604311196587">
@@ -199,26 +196,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315319090" />
-    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604310942570">
+    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604327247763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310942570" />
-    <state width="1854" height="312" key="GridCell.Tab.0.bottom" timestamp="1604326964577">
+    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604327247763" />
+    <state width="1854" height="312" key="GridCell.Tab.0.bottom" timestamp="1604328937939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="312" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964577" />
-    <state width="1854" height="312" key="GridCell.Tab.0.center" timestamp="1604326964576">
+    <state width="1854" height="312" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604328937939" />
+    <state width="1854" height="312" key="GridCell.Tab.0.center" timestamp="1604328937939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="312" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964576" />
-    <state width="1854" height="312" key="GridCell.Tab.0.left" timestamp="1604326964576">
+    <state width="1854" height="312" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604328937939" />
+    <state width="1854" height="312" key="GridCell.Tab.0.left" timestamp="1604328937939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="312" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964576" />
-    <state width="1854" height="312" key="GridCell.Tab.0.right" timestamp="1604326964576">
+    <state width="1854" height="312" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604328937939" />
+    <state width="1854" height="312" key="GridCell.Tab.0.right" timestamp="1604328937939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1854" height="312" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604326964576" />
+    <state width="1854" height="312" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604328937939" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1604315393315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
