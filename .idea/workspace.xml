@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Add README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Mod README.md et2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +126,7 @@
       <workItem from="1604306754725" duration="316000" />
       <workItem from="1604307131958" duration="4060000" />
       <workItem from="1604314069372" duration="12482000" />
-      <workItem from="1604390894155" duration="3878000" />
+      <workItem from="1604390894155" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="Add mobile">
       <created>1604310661259</created>
@@ -159,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604393141975</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mod README.md">
+      <created>1604394790453</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604394790453</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Mod README.md et2">
+      <created>1604397444540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604397444540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +192,9 @@
     <MESSAGE value="Add mobile" />
     <MESSAGE value="Refactor mobile classes" />
     <MESSAGE value="Add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add README.md" />
+    <MESSAGE value="Mod README.md" />
+    <MESSAGE value="Mod README.md et2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mod README.md et2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="382" key="#Notifications" timestamp="1604311196587">
@@ -192,6 +205,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="563" y="138" key="#RunTest/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604316876159" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604397246140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397246140" />
     <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604322261313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -204,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315319090" />
-    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604393173454">
+    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604397468574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604393173454" />
+    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397468574" />
     <state width="1854" height="312" key="GridCell.Tab.0.bottom" timestamp="1604328937939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -228,14 +245,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315393315" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604397528963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397528963" />
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604310674103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310674103" />
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604314396361">
+    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604397611575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604314396361" />
+    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397611575" />
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604308154995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
