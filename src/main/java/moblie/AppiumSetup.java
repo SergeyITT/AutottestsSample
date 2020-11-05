@@ -19,16 +19,17 @@ TODO: Избавиться от хардкода переменных путем
 public class AppiumSetup {
     AppiumDriver<MobileElement> driver;
 
-    String APP_PACKAGE = "ru.kinopoisk.dev";
-    String APP_MAIN_ACTIVITY = "ru.kinopoisk.presentation.screen.tabs.RedirectTabsIntentsActivity";
-    String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
+    private static String ANDROID_APP_PACKAGE = "ru.kinopoisk.dev";
+    private static String ANDROID_APP_MAIN_ACTIVITY = "ru.kinopoisk.presentation.screen.tabs.RedirectTabsIntentsActivity";
+    private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
 
     /*
     Создаем singleton:
-    Теперь вместо new AppiumSetup() юзаем AppiumSetup.getInstance() там, где нужно получить экземпляр класса.
+    Теперь вместо new AppiumSetup() юзаем AppiumSetup.getInstance() там, где нужно получить экземпляр класса AppiumSetup
     Теперь экземпляр класса не будет каждый раз создаваться заново, а будет использовать старый, если он уже
-    был создан ранее.
+    был создан ранее
     */
+
     private static AppiumSetup instance; // Создаем экземпляр класса AppiumSetup
     private AppiumSetup(){} // Создаем пустой конструктор
     public static AppiumSetup getInstance(){
@@ -48,8 +49,8 @@ public class AppiumSetup {
         androidCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         androidCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
         androidCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
-        androidCapabilities.setCapability("appPackage", APP_PACKAGE);
-        androidCapabilities.setCapability("appActivity", APP_MAIN_ACTIVITY);
+        androidCapabilities.setCapability("appPackage", ANDROID_APP_PACKAGE);
+        androidCapabilities.setCapability("appActivity", ANDROID_APP_MAIN_ACTIVITY);
         androidCapabilities.setCapability(MobileCapabilityType.APP, pathToApp);
 
         /*
@@ -62,12 +63,12 @@ public class AppiumSetup {
         WebDriverRunner.setWebDriver(driver);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
+
     public void quitDriver(){
+        driver.quit(); // Выключаем драйвер (Приложение закрывается)
+    }
 
-        /*
-        Выключаем драйвер (Приложение закрывается)
-         */
-
-        driver.quit();
+    public static String getAndroidAppPackage() {
+        return ANDROID_APP_PACKAGE;
     }
 }

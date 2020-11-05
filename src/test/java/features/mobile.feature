@@ -7,4 +7,5 @@ Feature: Mobile test
     Then Try to swipe
     Then Try to swipe
     Then Try to swipe
+    Then Push the button
     Then Stop the app
