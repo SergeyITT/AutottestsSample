@@ -56,7 +56,7 @@ public class AppiumSetup {
         /*
         Записываем в драйвер ссылку на Appium Server и настроенные DesiredCapabilities.
         Запускаем настроенный драйвер.
-        Выставляем для драйвера таймауты ожидания.
+        Выставляем для драйвера таймауты ожидания..
          */
 
         driver = new AndroidDriver(appiumServer, androidCapabilities);
