@@ -1,27 +1,28 @@
 package steps.pages.PageExample;
 
-import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
-import io.appium.java_client.MobileElement;
-import moblie.AppiumSetup;
-import org.openqa.selenium.By;
+import moblie.Actions;
 
-import static com.codeborne.selenide.Selenide.$;
+/*
+Класс Page Object паттерна, где условно находится описание конкретного экрана / страницы
+TODO: Адаптировать геттеры для кроссплатформы
+ */
 
 public class PageElements {
 
-    private static PageElements instance; // Создаем экземпляр класса AppiumSetup
-    private PageElements(){} // Создаем пустой конструктор
-    public static PageElements getInstance(){
-        if(instance == null){
-            instance = new PageElements();
-        }
-        return instance;
-    } // Метод, возвращающий AppiumSetup - новый или уже существующий
+    /*
+    Надежнее всего пользоваться селектором по xpath. Здесь используется удобный для мобилок метод, который
+    упрощает написание локаторов. Но в чистом виде локатор выглядит так:
+    SelenideElement element = $x("//*[@resource-id='appPackage:id/id']");
+     */
 
-    SelenideElement button = $(By.id("ru.kinopoisk.dev:id/button_payment"));
+    private static SelenideElement button = Actions.getLocatorByResourceId("button_payment");
+    private static SelenideElement buttonTwo = Actions.getLocatorByResourceId("button_payment_two");
 
-
+    public static SelenideElement getButton() {
+        return button;
+    }
+    public static SelenideElement getButtonTwo() {
+        return buttonTwo;
+    }
 }

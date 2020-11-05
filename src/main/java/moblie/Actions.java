@@ -1,5 +1,6 @@
 package moblie;
 
+import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -7,12 +8,14 @@ import org.openqa.selenium.Dimension;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import static com.codeborne.selenide.Selenide.$x;
+
 /*
 Класс для хранения дополнительных методов для мобилок, например - свайпы.
 В теории его можно фрагментировать и по необходимости и растащить на интерфейсы.
  */
 
-public abstract class Actions {
+public class Actions {
 
     /*
     TODO: Подобрать более грамотные значения пропорций экрана для свайпа. Стандартные свайпы с середины - отстой
@@ -86,5 +89,18 @@ public abstract class Actions {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static SelenideElement getLocatorByResourceId(String id) {
+
+        /*
+        Метод, позволяющий писать большинство Android селекторов быстрее и проще + добавляет возможность
+        быстро менять пакет в id элемента
+        TODO: Добавить методы, позволяющие менять контейнеры, индексы, текст
+         */
+
+        String xpath = String.format("//*[@resource-id='%s:id/%s']", AppiumSetup.getAndroidAppPackage(), id);
+        SelenideElement element = $x(xpath);
+        return element;
     }
 }
