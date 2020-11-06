@@ -2,7 +2,6 @@ package steps.pages;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import moblie.Actions;
 import moblie.AppiumSetup;
 
 /*
@@ -25,14 +24,10 @@ public class BaseActions {
 
       /*
       Обязательный шаг перед началом любого теста, т.к. здесь запускается нужный драйвер
-      TODO: Адаптировать под запуск IOS
-      TODO: Сделать так чтобы сборки можно было брать из облака
       TODO: Сделать так, чтобы метод понимал, когда кончился Splash-screen перед прохождением др. шагов
        */
 
-      //По умолчанию путь до apk для Андройда - Рабочий стол юзера, файл - test.apk
-      String pathToApp = System.getProperty("user.home") + "/Desktop/test.apk";
-      appiumSetup.setAndroidDriver(pathToApp);
+      appiumSetup.setDriver();
 
       // Поставил сюда таймаут, т.к. нужно какое то время, чтобы пропал Splash-screen.
       moblie.Actions.timeOut(5);
