@@ -50,12 +50,13 @@
 5. Завершить сессию и закрыть инспектор
 6. Скачать фреймворк, запустить **IDE** и открыть ***\AutottestsSample\src\main\java\moblie\AppiumSetup.java***
 7. Заполнить поля: 
-    * **APP_PACKAGE** (Пакет тестируемого приложения)
-    * **APP_MAIN_ACTIVITY** (**MainActivity** тестируемого приложения)
+    * **ANDROID_APP_PACKAGE** (Пакет тестируемого приложения)
+    * **ANDROID_APP_MAIN_ACTIVITY** (**MainActivity** тестируемого приложения)
     * **PLATFORM_VERSION** (Версия ОС тестового девайса, по умолчанию - **10.0**)
     * **APPIUM_VERSION** (Версия **Appium desktop**)
+    * **PLATFORM** (Тестируемая платформа. Прим.: **Android**)
 8. **apk** тестового приложения переименовать в **test.apk** и кинуть на Рабочий стол (По умолчанию фрейм будет запускать **test.apk**
-с рабочего столя Пользователя, настроить можно тут: ***\AutottestsSample\src\test\java\steps\MyStepDefsMobile.java*** - **String pathToApp**)
+с рабочего столя Пользователя, настроить можно тут: ***\AutottestsSample\src\main\java\mobile\AppiumSetup*** - **String PATH_TO_APP**)
 9. Запустить файл **RunTest** (Правой кнопкой -> Run) (Должно запуститься приложение, **Appium** попытается несколько раз проскролить экран вправо. 
 Чтобы это увидеть, можно включить отображение нажатий в меню "Для разработчиков" на девайсе)
 
