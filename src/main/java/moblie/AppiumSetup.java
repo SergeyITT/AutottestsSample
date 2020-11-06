@@ -24,7 +24,7 @@ public class AppiumSetup {
     private static String PLATFORM = "Android".toLowerCase(); // Здесь будет переменная среды
     private static String PLATFORM_VERSION = "10"; // Здесь будет переменная среды
     private static String DEVICE_NAME = "Test device"; // Здесь будет переменная среды
-    private static String PATH_TO_APP = System.getProperty("user.home") + "/Desktop/test.apk"; // Здесь будет метод
+    private static String PATH_TO_APP = System.getProperty("user.home") + "/Desktop/test.apk"; // Здесь будет метод (?)
     private static String APPIUM_VERSION = "1.15.1";
     private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub"; // Теоритически - константа, но это не точно
 
