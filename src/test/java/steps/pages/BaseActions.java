@@ -2,7 +2,8 @@ package steps.pages;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import moblie.AppiumSetup;
+import moblie.platform.Android;
+import moblie.platform.Platform;
 
 /*
 Класс с основными методами взаимодействия с приложением, не зависящими от конкретных элементов Page
@@ -17,7 +18,7 @@ public class BaseActions {
    Создаем Appium драйвер для запуска приложения.
    Подробнее: AutottestsSample\src\main\java\moblie\AppiumSetup.java
    */
-   private AppiumSetup appiumSetup = AppiumSetup.getInstance();
+   Platform android = Android.getInstance();
 
    @Given("Start the app")
    public void startApp() throws Throwable {
@@ -27,7 +28,7 @@ public class BaseActions {
       TODO: Сделать так, чтобы метод понимал, когда кончился Splash-screen перед прохождением др. шагов
        */
 
-      appiumSetup.setDriver();
+      android.runDriver(android.getDriver());
 
       // Поставил сюда таймаут, т.к. нужно какое то время, чтобы пропал Splash-screen.
       moblie.Actions.timeOut(5);
@@ -41,9 +42,9 @@ public class BaseActions {
       В большинстве случаев - обязательны шаг в конце теста
       Временно сделал тайм аут перед закрытием, чтобы отслеживать последний шаг
       */
-
+      Platform StartAndroid = Android.getInstance();
       moblie.Actions.timeOut(3);
-      appiumSetup.quitDriver();
+      StartAndroid.quitDriver(StartAndroid.getDriver());
    }
 
    @Then("Try to swipe")
@@ -54,6 +55,6 @@ public class BaseActions {
       TODO: Запилить возможность выбора стороны
        */
 
-      moblie.Actions.swipeScreen(moblie.Actions.Direction.LEFT);
+      moblie.Actions.swipeScreen(android.getDriver(), moblie.Actions.Direction.LEFT);
    }
 }

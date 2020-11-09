@@ -19,10 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Steps refactor 3">
+    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Refactor AppiumSetup.java, update README.md">
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/1604932927161.0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/platform/Android.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/moblie/platform/Platform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/pages/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/pages/BaseActions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +144,10 @@
       <workItem from="1604582108012" duration="895000" />
       <workItem from="1604648525259" duration="20000" />
       <workItem from="1604648910568" duration="112000" />
-      <workItem from="1604661428761" duration="8416000" />
+      <workItem from="1604661428761" duration="9752000" />
+      <workItem from="1604673108541" duration="1502000" />
+      <workItem from="1604674660128" duration="96000" />
+      <workItem from="1604906502207" duration="7174000" />
     </task>
     <task id="LOCAL-00001" summary="Add mobile">
       <created>1604310661259</created>
@@ -213,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604582333111</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor AppiumSetup.java, update README.md">
+      <created>1604670973863</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604670973863</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor AppiumSetup.java, update README.md">
+      <created>1604671087304</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604671087304</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +262,8 @@
     <MESSAGE value="Steps refactor" />
     <MESSAGE value="Steps refactor 2" />
     <MESSAGE value="Steps refactor 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Steps refactor 3" />
+    <MESSAGE value="Refactor AppiumSetup.java, update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor AppiumSetup.java, update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="382" key="#Notifications" timestamp="1604311196587">
@@ -257,38 +278,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397246140" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1604673907323">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604673907323" />
     <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604322261313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604322261313" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604933589429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604933589429" />
     <state x="827" y="270" width="664" height="500" key="EnvironmentVariablesDialog" timestamp="1604314717956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="827" y="270" width="664" height="500" key="EnvironmentVariablesDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604314717956" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604315319090">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604674747415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315319090" />
-    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604582348887">
+    <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604674747415" />
+    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604671122676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604582348887" />
-    <state width="1499" height="378" key="GridCell.Tab.0.bottom" timestamp="1604667297496">
+    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604671122676" />
+    <state width="1877" height="232" key="GridCell.Tab.0.bottom" timestamp="1604933281925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297496" />
-    <state width="1499" height="378" key="GridCell.Tab.0.center" timestamp="1604667297496">
+    <state width="1877" height="232" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604933281925" />
+    <state width="1877" height="232" key="GridCell.Tab.0.center" timestamp="1604933281925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297496" />
-    <state width="1499" height="378" key="GridCell.Tab.0.left" timestamp="1604667297495">
+    <state width="1877" height="232" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604933281925" />
+    <state width="1877" height="232" key="GridCell.Tab.0.left" timestamp="1604933281925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297495" />
-    <state width="1499" height="378" key="GridCell.Tab.0.right" timestamp="1604667297496">
+    <state width="1877" height="232" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604933281925" />
+    <state width="1877" height="232" key="GridCell.Tab.0.right" timestamp="1604933281925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297496" />
+    <state width="1877" height="232" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604933281925" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1604315393315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -305,10 +334,10 @@
       <screen x="-1920" y="0" width="1280" height="693" />
     </state>
     <state x="-1920" y="0" width="1294" height="733" key="dock-window-1/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604670798700" />
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604582280005">
+    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604671093925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604582280005" />
+    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604671093925" />
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604574524637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
