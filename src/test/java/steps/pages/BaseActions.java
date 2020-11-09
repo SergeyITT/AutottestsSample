@@ -2,8 +2,11 @@ package steps.pages;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import moblie.platform.Android;
-import moblie.platform.Platform;
+import ui.platforms.Android;
+import ui.Container;
+import ui.Platform;
+
+import java.util.concurrent.TimeUnit;
 
 /*
 Класс с основными методами взаимодействия с приложением, не зависящими от конкретных элементов Page
@@ -14,11 +17,7 @@ TODO: Написать метод Restart the app
 
 public class BaseActions {
 
-   /*
-   Создаем Appium драйвер для запуска приложения.
-   Подробнее: AutottestsSample\src\main\java\moblie\AppiumSetup.java
-   */
-   Platform android = Android.getInstance();
+   Container container = Container.getInstance();
 
    @Given("Start the app")
    public void startApp() throws Throwable {
@@ -28,10 +27,8 @@ public class BaseActions {
       TODO: Сделать так, чтобы метод понимал, когда кончился Splash-screen перед прохождением др. шагов
        */
 
-      android.runDriver(android.getDriver());
-
-      // Поставил сюда таймаут, т.к. нужно какое то время, чтобы пропал Splash-screen.
-      moblie.Actions.timeOut(5);
+      container.runPlatform(new Android());
+      container.getPlatform().timeOut(5);
    }
 
    @Then("Stop the app")
@@ -42,9 +39,10 @@ public class BaseActions {
       В большинстве случаев - обязательны шаг в конце теста
       Временно сделал тайм аут перед закрытием, чтобы отслеживать последний шаг
       */
-      Platform StartAndroid = Android.getInstance();
-      moblie.Actions.timeOut(3);
-      StartAndroid.quitDriver(StartAndroid.getDriver());
+
+      Container container = Container.getInstance();
+      container.getPlatform().timeOut(5);
+      container.getPlatform().quitDriver();
    }
 
    @Then("Try to swipe")
@@ -54,7 +52,6 @@ public class BaseActions {
       Свайпает экран в сторону. Метод лежит в src\main\java\moblie\Actions.java
       TODO: Запилить возможность выбора стороны
        */
-
-      moblie.Actions.swipeScreen(android.getDriver(), moblie.Actions.Direction.LEFT);
+      container.getPlatform().swipeScreen(Platform.Direction.LEFT);
    }
 }

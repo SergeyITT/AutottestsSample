@@ -1,7 +1,7 @@
 package steps.pages.PageExample;
 
 import com.codeborne.selenide.SelenideElement;
-import moblie.Actions;
+import ui.platforms.Android;
 
 /*
 Класс Page Object паттерна, где условно находится описание конкретного экрана / страницы
@@ -16,8 +16,8 @@ public class PageElements {
     SelenideElement element = $x("//*[@resource-id='appPackage:id/id']");
      */
 
-    private static SelenideElement button = Actions.getLocatorByResourceId("button_payment");
-    private static SelenideElement buttonTwo = Actions.getLocatorByResourceId("button_payment_two");
+    private static SelenideElement button = Android.getLocatorByResourceId("button_payment");
+    private static SelenideElement buttonTwo = Android.getLocatorByResourceId("button_payment_two");
 
     public static SelenideElement getButton() {
         return button;
