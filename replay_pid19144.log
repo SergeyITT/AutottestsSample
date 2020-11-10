@@ -1392,7 +1392,7 @@ instanceKlass org/eclipse/sisu/wire/WireModule
 instanceKlass org/eclipse/sisu/bean/BeanBinder
 instanceKlass org/eclipse/sisu/plexus/PlexusBindingModule
 instanceKlass org/codehaus/plexus/DefaultPlexusContainer$BootModule
-instanceKlass org/codehaus/plexus/component/annotations/Configuration
+instanceKlass org/codehaus/plexus/component/annotations/ui.Config
 instanceKlass org/eclipse/sisu/plexus/PlexusAnnotatedMetadata
 instanceKlass org/eclipse/sisu/plexus/PlexusBeanMetadata
 instanceKlass org/eclipse/sisu/plexus/PlexusAnnotatedBeanModule$PlexusAnnotatedBeanSource

@@ -7,40 +7,33 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public interface Platform {
 
-    String APPIUM_VERSION = "1.15.1";
-    String APPIUM_URL = "http://127.0.0.1:4723/wd/hub"; // Теоритически - константа, но это не точно
-
+    // Отдает драйвер наследника
     AppiumDriver getDriver();
+
+    // Отдает настроенные Capabilities по Config
     DesiredCapabilities getCapabilities();
 
+    // Получает инстанс Container и запускает хранящийся там драйвер
     default void runDriver() {
         Container container = Container.getInstance();
-        WebDriverRunner.setWebDriver(container.getPlatform().getDriver());
-        container.getPlatform().getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        AppiumDriver driver = container.getPlatform().getDriver();
+
+        WebDriverRunner.setWebDriver(driver);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     };
+
+    // Получает инстанс Container и выключает хранящийся там драйвер
     default void quitDriver() {
         Container container = Container.getInstance();
         container.getPlatform().getDriver().quit();
     };
-    default URL getAppiumUrl() {
-        URL appiumServer = null;
-        try {
-            appiumServer = new URL(APPIUM_URL);
-        } catch (MalformedURLException e) {
 
-        }
-        return appiumServer;
-    }
-    default String getAppiumVersion(){
-        return APPIUM_VERSION;
-    };
+    // Скроллит экран по заданному Direction
     default void swipeScreen(Direction dir) {
         Container container = Container.getInstance();
         System.out.println("swipeScreen(): dir: '" + dir + "'"); // Логирование событий в консоль
@@ -89,6 +82,8 @@ public interface Platform {
             // ignore
         }
     }
+
+    // Слепой таймаут
     default void timeOut (int sec){
         try {
             TimeUnit.SECONDS.sleep(sec);
