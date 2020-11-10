@@ -6,16 +6,14 @@ import ui.platforms.Android;
 import ui.Container;
 import ui.Platform;
 
-import java.util.concurrent.TimeUnit;
-
 /*
 Класс с основными методами взаимодействия с приложением, не зависящими от конкретных элементов Page
 Предлагаю не наполнять его новыми методами, или добавлять только "базовые" методы, подготавливающие приложение к тестированию.
 Методы для конкретных экранов должны быть реализованны отдельно в классах, логически связанных с Page
-TODO: Написать метод Restart the app
+TODO: Написать методы работы с активити типа Restart the app
  */
 
-public class BaseActions {
+public class MobileBaseActions {
 
    Container container = Container.getInstance();
 
