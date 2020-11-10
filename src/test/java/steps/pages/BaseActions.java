@@ -2,7 +2,11 @@ package steps.pages;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import moblie.AppiumSetup;
+import ui.platforms.Android;
+import ui.Container;
+import ui.Platform;
+
+import java.util.concurrent.TimeUnit;
 
 /*
 Класс с основными методами взаимодействия с приложением, не зависящими от конкретных элементов Page
@@ -13,11 +17,7 @@ TODO: Написать метод Restart the app
 
 public class BaseActions {
 
-   /*
-   Создаем Appium драйвер для запуска приложения.
-   Подробнее: AutottestsSample\src\main\java\moblie\AppiumSetup.java
-   */
-   private AppiumSetup appiumSetup = AppiumSetup.getInstance();
+   Container container = Container.getInstance();
 
    @Given("Start the app")
    public void startApp() throws Throwable {
@@ -27,10 +27,8 @@ public class BaseActions {
       TODO: Сделать так, чтобы метод понимал, когда кончился Splash-screen перед прохождением др. шагов
        */
 
-      appiumSetup.setDriver();
-
-      // Поставил сюда таймаут, т.к. нужно какое то время, чтобы пропал Splash-screen.
-      moblie.Actions.timeOut(5);
+      container.runPlatform(new Android());
+      container.getPlatform().timeOut(5);
    }
 
    @Then("Stop the app")
@@ -42,8 +40,9 @@ public class BaseActions {
       Временно сделал тайм аут перед закрытием, чтобы отслеживать последний шаг
       */
 
-      moblie.Actions.timeOut(3);
-      appiumSetup.quitDriver();
+      Container container = Container.getInstance();
+      container.getPlatform().timeOut(5);
+      container.getPlatform().quitDriver();
    }
 
    @Then("Try to swipe")
@@ -53,7 +52,6 @@ public class BaseActions {
       Свайпает экран в сторону. Метод лежит в src\main\java\moblie\Actions.java
       TODO: Запилить возможность выбора стороны
        */
-
-      moblie.Actions.swipeScreen(moblie.Actions.Direction.LEFT);
+      container.getPlatform().swipeScreen(Platform.Direction.LEFT);
    }
 }
