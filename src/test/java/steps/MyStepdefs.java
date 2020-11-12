@@ -14,7 +14,7 @@ import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.То;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import cucumber.api.junit.Cucumber;
+
 import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.*;

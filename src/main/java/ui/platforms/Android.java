@@ -1,13 +1,11 @@
 package ui.platforms;
 
-import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ui.Config;
 import ui.Platform;
-import static com.codeborne.selenide.Selenide.$x;
 
 public class Android implements Platform {
 
@@ -36,21 +34,8 @@ public class Android implements Platform {
     }
 
     @Override
-    public CurrentPlatform whichPlatform() {
+    public CurrentPlatform getCurrentPlatformName() {
         return CurrentPlatform.ANDROID;
     }
 
-    // Доп. методы
-    public static SelenideElement getLocatorByResourceId(String id) {
-
-        /*
-        Метод, позволяющий писать большинство UiService.Android селекторов быстрее и проще + добавляет возможность
-        быстро менять пакет в id элемента
-        TODO: Добавить методы, позволяющие менять контейнеры, индексы, текст
-         */
-
-        String xpath = String.format("//*[@resource-id='%s:id/%s']", Config.getAndroidAppPackage(), id);
-        SelenideElement element = $x(xpath);
-        return element;
-    }
 }

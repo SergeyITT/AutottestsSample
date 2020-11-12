@@ -1,21 +1,27 @@
 package steps.pages.PageExample;
 
-import cucumber.api.java.en.Then;
+import io.cucumber.java.PendingException;
+import io.cucumber.java.en.When;
 
-/*
-Класс, где хранятся основные методы экрана или страницы, которые конвертируются в методы Cucumber
- */
-
+// Класс, где хранятся основные методы экрана или страницы, которые конвертируются в методы Cucumber
 public class PageActions {
 
-    @Then("Push the button")
-    public void pushTheBtn() {
-        PageElements.getButton().click();
+    @When("Push the button one")
+    public void pushTheBtnOne()  throws Throwable {
+        PageElements.button_one.click();
+        throw new PendingException();
     }
 
-    @Then("Push the button two")
-    public void pushTheBtnTwo() {
-        PageElements.getButtonTwo().click();
+    @When("Push the field one")
+    public void pushTheFieldOne()  throws Throwable {
+        PageElements.text_field_one.click();
+        throw new PendingException();
+    }
+
+    @When("Send value {string} the field two")  // "([^"]*) - String input?, (\\d+) - int input?
+    public void pushTheFieldTwo(String value) throws Throwable  {
+        PageElements.text_field_one.click();
+        throw new PendingException();
     }
 
 
