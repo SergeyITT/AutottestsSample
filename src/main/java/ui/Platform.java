@@ -18,6 +18,8 @@ public interface Platform {
     // Отдает настроенные Capabilities по Config
     DesiredCapabilities getCapabilities();
 
+    CurrentPlatform whichPlatform();
+
     // Получает инстанс Container и запускает хранящийся там драйвер
     default void runDriver() {
         Container container = Container.getInstance();
@@ -97,6 +99,9 @@ public interface Platform {
         DOWN,
         LEFT,
         RIGHT;
+    }
+    enum CurrentPlatform {
+        ANDROID, IOS
     }
 
 

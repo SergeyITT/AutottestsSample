@@ -15,11 +15,13 @@ public class Android implements Platform {
     private AppiumDriver driver = new AndroidDriver(Config.getAppiumUrl(), getCapabilities());
 
     // Геттер драйвера платформы
+    @Override
     public AppiumDriver getDriver() {
         return driver;
     }
 
     // Геттер уникального для платформы набора Capabilities
+    @Override
     public DesiredCapabilities getCapabilities() {
         DesiredCapabilities Capabilities = new DesiredCapabilities();
         Capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator1");
@@ -31,6 +33,11 @@ public class Android implements Platform {
         Capabilities.setCapability("appActivity", Config.getAndroidAppMainActivity());
         Capabilities.setCapability(MobileCapabilityType.APP, Config.getAndroidAppPathLocal());
         return Capabilities;
+    }
+
+    @Override
+    public CurrentPlatform whichPlatform() {
+        return CurrentPlatform.ANDROID;
     }
 
     // Доп. методы
