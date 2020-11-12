@@ -8,7 +8,7 @@ public abstract class Config {
 
     //TODO: Получать значения из конфига мавена
     final private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
-    final private static String APPIUM_VERSION = "1.15.1";
+    final private static String APPIUM_VERSION = "1.18.3";
     final private static String PLATFORM_NAME = "Android";
     final private static String PLATFORM_VERSION = "10.0";
     final private static String DEVICE_NAME = "Device";
@@ -29,9 +29,11 @@ public abstract class Config {
         switch (PLATFORM_NAME.toLowerCase()) {
             case "android":
                 currentPlatform = CurrentPlatform.ANDROID;
+                System.out.printf("POINT: platform " + CurrentPlatform.ANDROID);
                 break;
             case "ios":
                 currentPlatform = CurrentPlatform.IOS;
+                System.out.printf("POINT: platform " + CurrentPlatform.IOS);
                 break;
             default:
                 System.out.printf("ERROR: Undefined platform");
