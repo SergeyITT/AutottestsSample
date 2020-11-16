@@ -1,5 +1,8 @@
 package ui;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
+
 public class Container {
     Platform platform;
 
@@ -28,5 +31,7 @@ public class Container {
         Container container = Container.getInstance();
         container.setPlatform(platform);
         container.getPlatform().runDriver();
+
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 }

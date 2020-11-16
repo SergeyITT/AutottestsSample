@@ -8,6 +8,8 @@
     <artifactId>allureCucumberSelenide-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <url>https://github.com/SergeyITT/AutottestsSample</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -15,57 +17,56 @@
         <!--VERSIONS:-->
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
-        <maven.project.info.reports.plugin.version>2.9</maven.project.info.reports.plugin.version>
+        <maven.project.info.reports.plugin.version>3.1.1</maven.project.info.reports.plugin.version>
         <maven.site.plugin.version>3.9.1</maven.site.plugin.version>
+        <allure.maven.version>2.10.0</allure.maven.version>
         <aspectj.version>1.8.13</aspectj.version>
         <allure.version>2.13.6</allure.version>
-        <cucumber.version>6.8.1</cucumber.version>
+        <cucumber.version>4.8.1</cucumber.version>
         <junit.version>4.13.1</junit.version>
-
+        <slf4j.version>1.8.0-beta4</slf4j.version>
     </properties>
 
     <build>
 
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <version>${maven.site.plugin.version}</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
 
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.plugin.version}</version>
                 <configuration>
-                    <testFailureIgnore>false</testFailureIgnore>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        <!--javaagent:"${settings.localRepository}\org\aspectj\aspectjweaver\${aspectj.version}\aspectjweaver-${aspectj.version}.jar"-->
+                        -Dcucumber.options="--plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
                     </argLine>
                     <properties>
                         <property>
                             <name>listener</name>
                             <value>io.qameta.allure.junit4.AllureJunit4</value>
                         </property>
+                        <!--<property>
+                            <name>allure.results.directory</name>
+                            <value>${project.build.directory}/allure-results</value>
+                        </property>-->
                     </properties>
                 </configuration>
-                <dependencies>
+                <!--<dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
+                        <version>1.8.13</version>
                     </dependency>
-                </dependencies>
+                </dependencies>-->
             </plugin>
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -81,9 +82,10 @@
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.10.0</version>
+                <version>${allure.maven.version}</version>
                 <configuration>
-                    <reportVersion>2.3.1</reportVersion>
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                    <reportVersion>${allure.maven.version}</reportVersion>
                 </configuration>
             </plugin>
 
@@ -101,46 +103,13 @@
         </plugins>
     </build>
 
-    <url>https://github.com/justinhrobbins/multi-module-site-report-test</url>
-    <distributionManagement>
-        <site>
-            <id>site</id>
-            <name>site</name>
-            <url>scp://www.yourcompany.com/www/docs/project/</url>
-        </site>
-    </distributionManagement>
-
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>${maven.project.info.reports.plugin.version}</version>
-            </plugin>
-        </plugins>
-    </reporting>
-
     <dependencies>
 
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>${maven.javadoc.plugin.verions}</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-project-info-reports-plugin</artifactId>
-            <version>2.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.9.1</version>
-        </dependency>
+        <!-- <dependency>
+           <groupId>org.aspectj</groupId>
+           <artifactId>aspectjweaver</artifactId>
+           <version>${aspectj.version}</version>
+       </dependency>-->
 
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
@@ -149,27 +118,16 @@
         </dependency>
 
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.12</version>
+            <version>${slf4j.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>5.15.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>ru.yandex.qatools.htmlelements</groupId>
-            <artifactId>htmlelements-java</artifactId>
-            <version>1.19</version>
         </dependency>
 
         <dependency>
@@ -206,7 +164,7 @@
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber-jvm</artifactId>
+            <artifactId>allure-cucumber4-jvm</artifactId>
             <version>${allure.version}</version>
         </dependency>
 
@@ -223,7 +181,5 @@
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
 </project>
