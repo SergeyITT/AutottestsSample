@@ -1,16 +1,16 @@
 # language: en
-@Feature: Test
+
+@smoke
 Feature: Mobile test
-  @smoke
-  Scenario: Try to start the app
+
+  Scenario: Try to fix the test ONE2
     Given Start the app
     When Try to swipe
     Then Try to swipe
     Then Try to swipe
     Then Stop the app
 
-  @smoke
-  Scenario: Try to start the app 2
+  Scenario: Try to fix the test TWO2
     Given Start the app
     When Try to swipe
     Then Push the button one

@@ -1,9 +1,9 @@
 # language: en
 
-Feature: First test
+Feature: Stop
 
-  Scenario: Try to start the app
-   Given Start the app
+  Scenario: Stop
+   Given Stop
    # When I type "Simple sample" in the search string on yandex page
    # Then I check that the list of results on yandex page is not empty
 
