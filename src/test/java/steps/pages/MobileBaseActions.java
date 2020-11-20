@@ -1,9 +1,8 @@
 package steps.pages;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.qameta.allure.Feature;
-import io.qameta.allure.cucumber4jvm.*;
 import ui.platforms.Android;
 import ui.Container;
 import ui.Platform;

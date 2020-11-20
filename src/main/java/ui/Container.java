@@ -18,11 +18,13 @@ public class Container {
 
     // Инициализирует платформу контейнера необходимой платформой
     public void setPlatform(Platform platform){
+        System.out.print("WORKLOG: Container.setPlatform\n");
         this.platform = platform;
     }
 
     // Отдает платформу, записанную в контейнер
     public Platform getPlatform(){
+        System.out.print("WORKLOG: Container.getPlatform\n");
         return platform;
     }
 
@@ -31,7 +33,6 @@ public class Container {
         Container container = Container.getInstance();
         container.setPlatform(platform);
         container.getPlatform().runDriver();
-
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
+        System.out.print("WORKLOG: Container.runPlatform\n");
     }
 }
