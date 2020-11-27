@@ -22,55 +22,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moblie/Actions$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moblie/Actions$Direction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moblie/Actions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup$Platform.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/pages/BaseActions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/pages/PageExample/PageActions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/pages/PageExample/PageElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/1604578756639.0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/1604578756639.0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/RunTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/first.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/first.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/mobile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/mobile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/executor.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/executor.json" afterDir="false" />
+    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Updates">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/executor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moblie/Actions$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moblie/Actions$Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moblie/Actions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup$Platform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/css/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/external.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/project-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-features.RunTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-features.RunTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/features.RunTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/features.RunTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/RunTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/RunTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-features.RunTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/features.RunTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/allure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/RunTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/pages/BaseActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/pages/PageExample/PageActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/pages/PageExample/PageElements.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +60,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -224,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605529442704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updates">
+      <created>1606470858025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606470858025</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -279,7 +260,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1606423323497">
@@ -302,34 +284,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606388470030" />
-    <state width="938" height="257" key="GridCell.Tab.0.bottom" timestamp="1606426192202">
+    <state width="938" height="257" key="GridCell.Tab.0.bottom" timestamp="1606471654299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
-    <state width="938" height="257" key="GridCell.Tab.0.center" timestamp="1606426192202">
+    <state width="938" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606471654299" />
+    <state width="938" height="257" key="GridCell.Tab.0.center" timestamp="1606471654299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
-    <state width="938" height="257" key="GridCell.Tab.0.left" timestamp="1606426192202">
+    <state width="938" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606471654299" />
+    <state width="938" height="257" key="GridCell.Tab.0.left" timestamp="1606471654299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
-    <state width="938" height="257" key="GridCell.Tab.0.right" timestamp="1606426192202">
+    <state width="938" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606471654299" />
+    <state width="938" height="257" key="GridCell.Tab.0.right" timestamp="1606471654299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
+    <state width="938" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606471654299" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1606301080033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606301080033" />
-    <state x="184" y="86" key="MergeDialog" timestamp="1604676426263">
+    <state x="184" y="86" key="MergeDialog" timestamp="1606471267072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604676426263" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604313054209">
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606471267072" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1606471607587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604313054209" />
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606471607587" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606471591380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606471591380" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605529344799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

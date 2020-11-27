@@ -1,7 +1,6 @@
 package ui;
 
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
+
 
 public class Container {
     Platform platform;

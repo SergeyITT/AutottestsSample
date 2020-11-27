@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: features.RunTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.106 s <<< FAILURE! - in features.RunTest
-First test.Desktop2  Time elapsed: 10.93 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.712 s <<< FAILURE! - in features.RunTest
+First test.Desktop2  Time elapsed: 6.717 s  <<< FAILURE!
 com.codeborne.selenide.ex.ListSizeMismatch: 
 List size mismatch: expected: > 0, actual: 0, collection: By.xpath: //li[@class='serp-item']
 Elements: []
-Screenshot: file:/d:/AutottestsSample1/target/allure-results/1606470324967.0.png
-Page source: file:/d:/AutottestsSample1/target/allure-results/1606470324967.0.html
+Screenshot: file:/d:/AutottestsSample1/target/allure-results/1606471681634.0.png
+Page source: file:/d:/AutottestsSample1/target/allure-results/1606471681634.0.html
 Timeout: 4 s.
 

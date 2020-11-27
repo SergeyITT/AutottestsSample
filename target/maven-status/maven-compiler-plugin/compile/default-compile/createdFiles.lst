@@ -1,6 +1,10 @@
-moblie\AppiumSetup$Platform.class
-moblie\Actions.class
-moblie\AppiumSetup.class
-moblie\Actions$1.class
-moblie\Actions$Direction.class
-moblie\AppiumSetup$1.class
+ui\Container.class
+ui\Config$CurrentPlatform.class
+ui\Platform$1.class
+ui\Config.class
+ui\Platform$Direction.class
+ui\platforms\Android.class
+ui\Platform$CurrentPlatform.class
+ui\platforms\Desktop.class
+ui\Platform.class
+ui\platforms\IOS.class

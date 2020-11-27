@@ -1,2 +1,6 @@
-d:\AutottestsSample1\src\main\java\moblie\AppiumSetup.java
-d:\AutottestsSample1\src\main\java\moblie\Actions.java
+d:\AutottestsSample1\src\main\java\ui\Platform.java
+d:\AutottestsSample1\src\main\java\ui\platforms\Desktop.java
+d:\AutottestsSample1\src\main\java\ui\platforms\IOS.java
+d:\AutottestsSample1\src\main\java\ui\Container.java
+d:\AutottestsSample1\src\main\java\ui\Config.java
+d:\AutottestsSample1\src\main\java\ui\platforms\Android.java

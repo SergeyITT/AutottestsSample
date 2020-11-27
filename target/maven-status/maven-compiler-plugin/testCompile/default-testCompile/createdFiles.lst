@@ -1,2 +1,7 @@
 steps\MyStepdefs.class
+steps\Page.class
+steps\pages\PageExample\PageActions.class
 features\RunTest.class
+steps\Page$1.class
+steps\pages\MobileBaseActions.class
+steps\pages\PageExample\PageElements.class
