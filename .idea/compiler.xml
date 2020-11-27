@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AllureCucumberSelenide" />
+        <module name="allureCucumberSelenide-test" />
         <module name="AutottestsSample" />
       </profile>
     </annotationProcessing>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,11 +22,55 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="Steps refactor 3">
+    <list default="true" id="fb411f18-d5a5-4e37-8e9a-4dcd3b2ff7b6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/moblie/Actions$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/moblie/Actions$Direction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/moblie/Actions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup$Platform.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/moblie/AppiumSetup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/pages/BaseActions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/pages/PageExample/PageActions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/pages/PageExample/PageElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/AppiumSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moblie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moblie/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/pages/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/pages/BaseActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/1604578756639.0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/1604578756639.0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/first.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/first.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/mobile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/mobile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MyStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/executor.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/executor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-features.RunTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-features.RunTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/features.RunTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/features.RunTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/RunTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/RunTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/MyStepdefs.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,44 +81,53 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="XML Properties File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="feature" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="SergeyITT" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="AutottestsSample" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectId" id="1jj9hR9OFYspeEkqbzF5s8ETxSe" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectId" id="1jYjCRmJLqjWWXWKtzWICskWfdD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AutottestsSample1\src\test\resources" />
+      <recent name="D:\AutottestsSample1\target\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.allureCucumberSelenide-test [site:effective-site]">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -79,8 +135,7 @@
       </method>
     </configuration>
     <configuration name="RunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AutottestsSample" />
-      <useClassPathOnly />
+      <module name="AllureCucumberSelenide" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="features.*" />
@@ -89,9 +144,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="features" />
       <option name="MAIN_CLASS_NAME" value="features.RunTest" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,6 +157,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="allureCucumberSelenide-test [site:effective-site]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="allure:serve" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -113,12 +193,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.RunTest" />
+      <item itemvalue="Maven.allureCucumberSelenide-test [site:effective-site]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,93 +216,54 @@
       <updated>1567272111162</updated>
       <workItem from="1567272113913" duration="208000" />
       <workItem from="1603885282707" duration="2346000" />
-      <workItem from="1604306754725" duration="316000" />
-      <workItem from="1604307131958" duration="4060000" />
-      <workItem from="1604314069372" duration="12482000" />
-      <workItem from="1604390894155" duration="18789000" />
-      <workItem from="1604559295355" duration="612000" />
-      <workItem from="1604574196735" duration="6500000" />
-      <workItem from="1604581828159" duration="202000" />
-      <workItem from="1604582108012" duration="895000" />
-      <workItem from="1604648525259" duration="20000" />
-      <workItem from="1604648910568" duration="112000" />
-      <workItem from="1604661428761" duration="8416000" />
     </task>
-    <task id="LOCAL-00001" summary="Add mobile">
-      <created>1604310661259</created>
+    <task id="LOCAL-00001" summary="123">
+      <created>1605529442704</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1604310661259</updated>
+      <updated>1605529442704</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add mobile">
-      <created>1604310912447</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604310912447</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Refactor mobile classes">
-      <created>1604327224110</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1604327224110</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add README.md">
-      <created>1604393141975</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1604393141975</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Mod README.md">
-      <created>1604394790453</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1604394790453</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Mod README.md et2">
-      <created>1604397444540</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1604397444540</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Mod README.md et3">
-      <created>1604397674673</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1604397674673</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Steps refactor">
-      <created>1604412877423</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1604412877423</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Steps refactor 2">
-      <created>1604582128982</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1604582128982</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Steps refactor 3">
-      <created>1604582333111</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1604582333111</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="RunTest - 2020.10.28 at 14h 45m 34s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 14h 47m 01s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 14h 51m 19s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 01m 24s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 01m 52s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 03m 02s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 04m 45s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 11m 41s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 14m 08s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunTest - 2020.10.28 at 15h 19m 20s.xml">
+      <configuration name="RunTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2554000" />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -232,86 +278,65 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add mobile" />
-    <MESSAGE value="Refactor mobile classes" />
-    <MESSAGE value="Add README.md" />
-    <MESSAGE value="Mod README.md" />
-    <MESSAGE value="Mod README.md et2" />
-    <MESSAGE value="Mod README.md et3" />
-    <MESSAGE value="Steps refactor" />
-    <MESSAGE value="Steps refactor 2" />
-    <MESSAGE value="Steps refactor 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Steps refactor 3" />
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="845" y="382" key="#Notifications" timestamp="1604311196587">
+    <state x="552" y="161" key="#Plugins" timestamp="1606423323497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="845" y="382" key="#Notifications/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604311196587" />
-    <state x="563" y="138" key="#RunTest" timestamp="1604316876159">
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1606423323497" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1604312809242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="563" y="138" key="#RunTest/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604316876159" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604397246140">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1604312809242" />
+    <state x="428" y="280" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606388734792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397246140" />
-    <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604322261313">
+    <state x="428" y="280" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606388734792" />
+    <state x="712" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604328771229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="605" y="85" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604322261313" />
-    <state x="827" y="270" width="664" height="500" key="EnvironmentVariablesDialog" timestamp="1604314717956">
+    <state x="712" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604328771229" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606388470030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="827" y="270" width="664" height="500" key="EnvironmentVariablesDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604314717956" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604315319090">
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606388470030" />
+    <state width="938" height="257" key="GridCell.Tab.0.bottom" timestamp="1606426192202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315319090" />
-    <state x="730" y="386" key="Github.CreatePullRequestDialog" timestamp="1604582348887">
+    <state width="938" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
+    <state width="938" height="257" key="GridCell.Tab.0.center" timestamp="1606426192202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="386" key="Github.CreatePullRequestDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604582348887" />
-    <state width="1499" height="378" key="GridCell.Tab.0.bottom" timestamp="1604667297496">
+    <state width="938" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
+    <state width="938" height="257" key="GridCell.Tab.0.left" timestamp="1606426192202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297496" />
-    <state width="1499" height="378" key="GridCell.Tab.0.center" timestamp="1604667297496">
+    <state width="938" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
+    <state width="938" height="257" key="GridCell.Tab.0.right" timestamp="1606426192202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297496" />
-    <state width="1499" height="378" key="GridCell.Tab.0.left" timestamp="1604667297495">
+    <state width="938" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606426192202" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1606301080033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297495" />
-    <state width="1499" height="378" key="GridCell.Tab.0.right" timestamp="1604667297496">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606301080033" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1604676426263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1499" height="378" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604667297496" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1604315393315">
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604676426263" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604313054209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604315393315" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604397528963">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604313054209" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605529344799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604397528963" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604310674103">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605529344799" />
+    <state x="342" y="140" key="new project wizard" timestamp="1604578639582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604310674103" />
-    <state x="-1920" y="0" width="1294" height="733" key="dock-window-1" timestamp="1604670798700">
-      <screen x="-1920" y="0" width="1280" height="693" />
-    </state>
-    <state x="-1920" y="0" width="1294" height="733" key="dock-window-1/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604670798700" />
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog" timestamp="1604582280005">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="663" y="308" key="git4idea.merge.GitPullDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604582280005" />
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604574524637">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604574524637" />
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1604578639582" />
   </component>
 </project>

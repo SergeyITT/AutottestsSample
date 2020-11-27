@@ -1,10 +1,10 @@
 package steps;
 
 import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.SelenideElement;
-import cucumber.api.PendingException;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,13 +13,19 @@ import cucumber.api.java.ru.Если;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.То;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import cucumber.api.junit.Cucumber;
+
+import io.qameta.allure.selenide.AllureSelenide;
+
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.TakesScreenshot;
+
+import java.io.ByteArrayInputStream;
 
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class MyStepdefs {
+
 
 
     @То("^Я ввожу \"([^\"]*)\" поле поиска$")
@@ -33,8 +39,7 @@ public class MyStepdefs {
 }
 
     @Если("^Я открываю главную страницу Google Поиска$")
-    public void яОткрываюГлавнуюСтраницуGoogleПоиска() throws Throwable {
-     //   Configuration.browser = "chrome";
+    public void яОткрываюГлавнуюСтраницуGoogleПоиска(){
         open("https://google.com");
     }
 
@@ -42,6 +47,7 @@ public class MyStepdefs {
     public void iOpenGoogleCom() {
         Configuration.browser = "chrome";
         WebDriverManager.chromedriver().browserVersion("86").setup();
+        getWebDriver().manage().window().maximize();
         open("https://yandex.ru");
 
     }
@@ -65,11 +71,7 @@ public class MyStepdefs {
 
     @When("^I open yandex ru$")
     public void iOpenYandexRu(){
-        Configuration.browser = "chrome";
-        WebDriverManager.chromedriver().browserVersion("86").setup();
         open("https://yandex.ru");
-
-
     }
 
     @Then("^I type \"([^\"]*)\" in the search string on yandex page$")

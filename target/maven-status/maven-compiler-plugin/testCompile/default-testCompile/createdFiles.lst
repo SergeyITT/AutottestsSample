@@ -1,2 +1,5 @@
 steps\MyStepdefs.class
+steps\pages\PageExample\PageElements.class
+steps\pages\BaseActions.class
+steps\pages\PageExample\PageActions.class
 features\RunTest.class
