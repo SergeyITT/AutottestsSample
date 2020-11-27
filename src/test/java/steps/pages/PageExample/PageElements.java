@@ -1,28 +1,24 @@
 package steps.pages.PageExample;
 
 import com.codeborne.selenide.SelenideElement;
-import moblie.Actions;
+import steps.Page;
 
-/*
-Класс Page Object паттерна, где условно находится описание конкретного экрана / страницы
-TODO: Адаптировать геттеры для кроссплатформы
- */
+// Класс Page Object паттерна, где находятся локаторы всех элементов экрана
+public class PageElements implements Page {
 
-public class PageElements {
-
-    /*
-    Надежнее всего пользоваться селектором по xpath. Здесь используется удобный для мобилок метод, который
-    упрощает написание локаторов. Но в чистом виде локатор выглядит так:
-    SelenideElement element = $x("//*[@resource-id='appPackage:id/id']");
-     */
-
-    private static SelenideElement button = Actions.getLocatorByResourceId("button_payment");
-    private static SelenideElement buttonTwo = Actions.getLocatorByResourceId("button_payment_two");
-
-    public static SelenideElement getButton() {
-        return button;
-    }
-    public static SelenideElement getButtonTwo() {
-        return buttonTwo;
-    }
+    public final static SelenideElement
+            button_one = Page.setLocators(
+                    Page.getLocatorByResourceId("android_id"), //button_payment
+                    Page.getLocatorByResourceId("ios_id")),
+            button_two = Page.setLocators(
+                    Page.getLocatorByResourceId("android_id"),
+                    Page.getLocatorByResourceId("ios_id")),
+            text_field_one = Page.setLocators(
+                    Page.getLocatorByResourceId("android_id"),
+                    Page.getLocatorByResourceId("ios_id")),
+            text_field_two = Page.setLocators(
+                    Page.getLocatorByResourceId("android_id"),
+                    Page.getLocatorByResourceId("ios_id"));
 }
+
+

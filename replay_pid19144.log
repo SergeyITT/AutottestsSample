@@ -1175,7 +1175,7 @@ instanceKlass com/google/inject/internal/MoreTypes$GenericArrayTypeImpl
 instanceKlass com/google/inject/internal/MoreTypes$CompositeType
 instanceKlass com/google/inject/Key$AnnotationTypeStrategy
 instanceKlass com/google/common/util/concurrent/Uninterruptibles
-instanceKlass com/google/common/base/Platform
+instanceKlass com/google/common/base/ui.Platform
 instanceKlass com/google/common/base/Stopwatch
 instanceKlass com/google/common/util/concurrent/ExecutionList
 instanceKlass com/google/common/util/concurrent/AbstractFuture
@@ -1347,7 +1347,7 @@ instanceKlass com/google/inject/internal/Initializer
 instanceKlass com/google/common/collect/ImmutableCollection$Builder
 instanceKlass com/google/inject/internal/util/SourceProvider
 instanceKlass com/google/inject/internal/Errors$Converter
-instanceKlass com/google/common/collect/Platform
+instanceKlass com/google/common/collect/ui.Platform
 instanceKlass com/google/common/collect/Sets
 instanceKlass com/google/inject/internal/Errors
 instanceKlass java/util/logging/LogManager$5
@@ -1392,7 +1392,7 @@ instanceKlass org/eclipse/sisu/wire/WireModule
 instanceKlass org/eclipse/sisu/bean/BeanBinder
 instanceKlass org/eclipse/sisu/plexus/PlexusBindingModule
 instanceKlass org/codehaus/plexus/DefaultPlexusContainer$BootModule
-instanceKlass org/codehaus/plexus/component/annotations/Configuration
+instanceKlass org/codehaus/plexus/component/annotations/ui.Config
 instanceKlass org/eclipse/sisu/plexus/PlexusAnnotatedMetadata
 instanceKlass org/eclipse/sisu/plexus/PlexusBeanMetadata
 instanceKlass org/eclipse/sisu/plexus/PlexusAnnotatedBeanModule$PlexusAnnotatedBeanSource
