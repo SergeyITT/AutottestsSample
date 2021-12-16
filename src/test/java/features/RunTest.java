@@ -27,7 +27,7 @@ public class RunTest {
     @BeforeClass
     public static void startApp(){
             Configuration.startMaximized = true;
-            WebDriverManager.chromedriver().browserVersion("86").setup();
+            WebDriverManager.chromedriver().browserVersion("95").setup();
             SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
     }
 

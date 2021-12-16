@@ -65,7 +65,7 @@ public class MyStepdefs {
 
     @Then("^I type \"([^\"]*)\" in the search string on yandex page$")
     public void iTypeInTheSearchStringOnYandexPage(String text)  {
-        $x("(//input[contains(class, input__control)])[4]").sendKeys(text);
+        $x("//*[contains(@class, 'input__control ')]").sendKeys(text);
     }
 
     @And("^Push Enter Button on yandex page$")
@@ -76,6 +76,6 @@ public class MyStepdefs {
 
     @And("^I check that the list of results on yandex page is not empty$")
     public void iCheckThatTheListOfResultsOnYandexPageIsNotEmpty(){
-        $$x("//li[@class='serp-item']").shouldHave(CollectionCondition.sizeGreaterThan(0));
+        $$x("//*[contains(@class,'serp-item')]").shouldHave(CollectionCondition.sizeGreaterThan(1));
     }
 }
