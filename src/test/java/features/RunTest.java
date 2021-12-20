@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue =      "steps",
-        tags = "@smoke"
+        tags = "@test"
 //        dryRun = false,
 //        strict = false,
 //        snippets = SnippetType.UNDERSCORE

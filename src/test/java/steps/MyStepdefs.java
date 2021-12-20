@@ -17,29 +17,21 @@ public class MyStepdefs {
 
 
 
-    @То("^Я ввожу \"([^\"]*)\" поле поиска$")
+    @То("^Ввести \"([^\"]*)\" в поле поиска$")
     public void яВвожуПолеПоиска(String text)  {
         $x("//input[@name='q']").sendKeys(text);
     }
 
-    @И("^Нажимаю Кнопу Найти$")
+    @И("^Нажать кнопку Найти$")
     public void нажимаюКнопуНайти()  {
         $x("//input[@name='q']").sendKeys(Keys.ENTER);
 }
 
-    @Если("^Я открываю главную страницу Google Поиска$")
-    public void яОткрываюГлавнуюСтраницуGoogleПоиска(){
+    @Если("^Открыть главную страницу Google Поиска$")
+    public void открытьГлавнуюСтраницуGoogleПоиска(){
         open("https://google.com");
     }
 
-    @When("^I open google com$")
-    public void iOpenGoogleCom() {
-        Configuration.browser = "chrome";
-        WebDriverManager.chromedriver().browserVersion("86").setup();
-        getWebDriver().manage().window().maximize();
-        open("https://yandex.ru");
-
-    }
 
     @Then("^I type \"([^\"]*)\" in the search string$")
     public void iTypeInTheSearchString(String text)  {
@@ -58,13 +50,13 @@ public class MyStepdefs {
        $$x("//div[@class='g']").shouldHave(CollectionCondition.sizeGreaterThan(0));
     }
 
-    @When("^I open yandex ru$")
-    public void iOpenYandexRu(){
+    @When("^Open yandex ru$")
+    public void openYandexRu(){
         open("https://yandex.ru");
     }
 
-    @Then("^I type \"([^\"]*)\" in the search string on yandex page$")
-    public void iTypeInTheSearchStringOnYandexPage(String text)  {
+    @Then("^Type \"([^\"]*)\" in the search string on yandex page$")
+    public void typeInTheSearchStringOnYandexPage(String text)  {
         $x("//*[contains(@class, 'input__control ')]").sendKeys(text);
     }
 
@@ -74,8 +66,8 @@ public class MyStepdefs {
 
     }
 
-    @And("^I check that the list of results on yandex page is not empty$")
-    public void iCheckThatTheListOfResultsOnYandexPageIsNotEmpty(){
-        $$x("//*[contains(@class,'serp-item')]").shouldHave(CollectionCondition.sizeGreaterThan(1));
+    @And("^Check that the list of results on yandex page is not empty$")
+    public void checkThatTheListOfResultsOnYandexPageIsNotEmpty(){
+        $$x("//*[contains(@class,'serp-item')]").shouldHave(CollectionCondition.sizeGreaterThan(0));
     }
 }
