@@ -1,4 +1,5 @@
 steps\MyStepdefs.class
+steps\TestKeys.class
 steps\Page.class
 steps\pages\PageExample\PageActions.class
 features\RunTest.class

@@ -2,42 +2,45 @@ package steps;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Configuration;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.java.ru.Если;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.То;
+import cucumber.api.java.ru.Тогда;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Keys;
+
+import java.util.List;
+
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class MyStepdefs {
 
 
-
     @То("^Ввести \"([^\"]*)\" в поле поиска$")
-    public void яВвожуПолеПоиска(String text)  {
+    public void яВвожуПолеПоиска(String text) {
         $x("//input[@name='q']").sendKeys(text);
     }
 
     @И("^Нажать кнопку Найти$")
-    public void нажимаюКнопуНайти()  {
+    public void нажимаюКнопуНайти() {
         $x("//input[@name='q']").sendKeys(Keys.ENTER);
-}
+    }
 
     @Если("^Открыть главную страницу Google Поиска$")
-    public void открытьГлавнуюСтраницуGoogleПоиска(){
+    public void открытьГлавнуюСтраницуGoogleПоиска() {
         open("https://google.com");
     }
 
 
     @Then("^I type \"([^\"]*)\" in the search string$")
-    public void iTypeInTheSearchString(String text)  {
+    public void iTypeInTheSearchString(String text) {
         $x("//input[@name='q']").sendKeys(text);
     }
-
 
 
     @And("^Push Enter Button$")
@@ -46,17 +49,17 @@ public class MyStepdefs {
     }
 
     @And("^I check that the list of results is not empty$")
-    public void iCheckThatTheListOfResultsIsNotEmpty()  {
-       $$x("//div[@class='g']").shouldHave(CollectionCondition.sizeGreaterThan(0));
+    public void iCheckThatTheListOfResultsIsNotEmpty() {
+        $$x("//div[@class='g']").shouldHave(CollectionCondition.sizeGreaterThan(0));
     }
 
     @When("^Open yandex ru$")
-    public void openYandexRu(){
+    public void openYandexRu() {
         open("https://yandex.ru");
     }
 
     @Then("^Type \"([^\"]*)\" in the search string on yandex page$")
-    public void typeInTheSearchStringOnYandexPage(String text)  {
+    public void typeInTheSearchStringOnYandexPage(String text) {
         $x("//*[contains(@class, 'input__control ')]").sendKeys(text);
     }
 
@@ -67,7 +70,19 @@ public class MyStepdefs {
     }
 
     @And("^Check that the list of results on yandex page is not empty$")
-    public void checkThatTheListOfResultsOnYandexPageIsNotEmpty(){
+    public void checkThatTheListOfResultsOnYandexPageIsNotEmpty() {
         $$x("//*[contains(@class,'serp-item')]").shouldHave(CollectionCondition.sizeGreaterThan(0));
+    }
+
+    @То("^Ввести в поле поиска$")
+    public void ввестиВПолеПоиска(List<String> arg) {
+        for (int i = 0; i < arg.size(); i++) {
+            $x("//input[@name='q']").sendKeys(arg.get(i));
+        }
+    }
+
+    @Тогда("^Проверить что количество результатов больше (\\d+)$")
+    public void проверитьЧтоКоличествоРезультатовБольше(int resultCount) {
+        $$x("//div[@class='g']").shouldHave(CollectionCondition.sizeGreaterThan(resultCount));
     }
 }

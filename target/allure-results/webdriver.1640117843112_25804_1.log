@@ -1,0 +1,238 @@
+[1640117843.284][INFO]: Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 12162
+[1640117843.284][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1640117844.054][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\IDEAProjects\\Sample\\build\\downloads\\1640117843070_25804_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\IDEAProjects\\Sample\\build\\downloads\\1640117843070_25804_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1640117844.058][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\IDEAProjects\\Sample\\build\\downloads\\1640117843070_25804_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1640117844.058][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1640117844.062][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\D899~1\AppData\Local\Temp\scoped_dir25416_431013621" data:,
+[1640117844.636][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
+[1640117844.642][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1640117844.644][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1640117844.648][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "96.0.4664.110",
+      "chrome": {
+         "chromedriverVersion": "95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984})",
+         "userDataDir": "C:\\Users\\D899~1\\AppData\\Local\\Temp\\scoped_dir25416_431013621"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:8638"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "b12fa11831db3c0b58602da54a4da8eb"
+}
+[1640117844.698][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND MaximizeWindow {
+
+}
+[1640117844.698][INFO]: Waiting for pending navigations...
+[1640117844.700][INFO]: Done waiting for pending navigations. Status: ok
+[1640117844.818][INFO]: Waiting for pending navigations...
+[1640117844.819][INFO]: Done waiting for pending navigations. Status: ok
+[1640117844.819][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE MaximizeWindow {
+   "height": 1056,
+   "width": 1936,
+   "x": -8,
+   "y": -8
+}
+[1640117844.852][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1640117844.852][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE SetTimeouts
+[1640117844.868][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND Navigate {
+   "url": "https://google.com"
+}
+[1640117844.868][INFO]: Waiting for pending navigations...
+[1640117844.869][INFO]: Done waiting for pending navigations. Status: ok
+[1640117845.523][INFO]: Waiting for pending navigations...
+[1640117847.938][INFO]: Done waiting for pending navigations. Status: ok
+[1640117847.938][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE Navigate
+[1640117848.003][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@name='q']"
+}
+[1640117848.003][INFO]: Waiting for pending navigations...
+[1640117848.004][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.013][INFO]: Waiting for pending navigations...
+[1640117848.013][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.014][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "90d92497-2a66-4025-93aa-25bc85437c73"
+}
+[1640117848.037][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND TypeElement {
+   "id": "90d92497-2a66-4025-93aa-25bc85437c73",
+   "text": "Первый",
+   "value": [ "П", "е", "р", "в", "ы", "й" ]
+}
+[1640117848.037][INFO]: Waiting for pending navigations...
+[1640117848.037][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.076][INFO]: Waiting for pending navigations...
+[1640117848.080][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.080][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE TypeElement
+[1640117848.096][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@name='q']"
+}
+[1640117848.096][INFO]: Waiting for pending navigations...
+[1640117848.096][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.100][INFO]: Waiting for pending navigations...
+[1640117848.102][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.102][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "90d92497-2a66-4025-93aa-25bc85437c73"
+}
+[1640117848.112][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND TypeElement {
+   "id": "90d92497-2a66-4025-93aa-25bc85437c73",
+   "text": "Второй",
+   "value": [ "В", "т", "о", "р", "о", "й" ]
+}
+[1640117848.112][INFO]: Waiting for pending navigations...
+[1640117848.112][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.136][INFO]: Waiting for pending navigations...
+[1640117848.138][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.138][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE TypeElement
+[1640117848.159][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@name='q']"
+}
+[1640117848.159][INFO]: Waiting for pending navigations...
+[1640117848.159][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.163][INFO]: Waiting for pending navigations...
+[1640117848.164][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.164][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "90d92497-2a66-4025-93aa-25bc85437c73"
+}
+[1640117848.173][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND TypeElement {
+   "id": "90d92497-2a66-4025-93aa-25bc85437c73",
+   "text": "Третий",
+   "value": [ "Т", "р", "е", "т", "и", "й" ]
+}
+[1640117848.173][INFO]: Waiting for pending navigations...
+[1640117848.174][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.197][INFO]: Waiting for pending navigations...
+[1640117848.200][INFO]: Done waiting for pending navigations. Status: ok
+[1640117848.200][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE TypeElement
+[1640117848.326][INFO]: [b12fa11831db3c0b58602da54a4da8eb] COMMAND Quit {
+
+}
+[1640117848.421][INFO]: [b12fa11831db3c0b58602da54a4da8eb] RESPONSE Quit
