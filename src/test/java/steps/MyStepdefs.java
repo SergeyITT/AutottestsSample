@@ -1,8 +1,6 @@
 package steps;
 
 import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Configuration;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -10,13 +8,14 @@ import cucumber.api.java.ru.Если;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.То;
 import cucumber.api.java.ru.Тогда;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
 import org.openqa.selenium.Keys;
-
 import java.util.List;
+import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
 
 public class MyStepdefs {
 
@@ -84,5 +83,15 @@ public class MyStepdefs {
     @Тогда("^Проверить что количество результатов больше (\\d+)$")
     public void проверитьЧтоКоличествоРезультатовБольше(int resultCount) {
         $$x("//div[@class='g']").shouldHave(CollectionCondition.sizeGreaterThan(resultCount));
+    }
+
+    @Given("Enter values from the table into the login form")
+    public void enterValuesFromTheTableIntoTheLoginForm(DataTable dataTable) {
+        List<Map<String,String>> userList = dataTable.asMaps(String.class,String.class);
+        System.out.println(userList);
+        for(Map<String, String> e :userList){
+            System.out.println("Login: "+ e.get("login") + "Password: " + e.get("password"));
+        }
+
     }
 }
