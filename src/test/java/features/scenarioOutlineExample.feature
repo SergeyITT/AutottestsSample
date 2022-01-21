@@ -9,5 +9,5 @@ Feature: Simple tests
 
     Examples:
       | searchInput            |
-      | Тестовый примеро       |
+      | Тестовый пример        |
       | Aцввфывфывфывфывфывфыв |

@@ -18,8 +18,7 @@ import org.junit.runner.RunWith;
         tags = "@test"
 //        dryRun = false,
 //        strict = false,
-//        snippets = SnippetType.UNDERSCORE
-    //    name = "^Успешно*"
+
 
 )
 

@@ -90,7 +90,7 @@ public class MyStepdefs {
         List<Map<String,String>> userList = dataTable.asMaps(String.class,String.class);
         System.out.println(userList);
         for(Map<String, String> e :userList){
-            System.out.println("Login: "+ e.get("login") + "Password: " + e.get("password"));
+            System.out.println("Login: "+ e.get("login") + " Password: " + e.get("password"));
         }
 
     }
