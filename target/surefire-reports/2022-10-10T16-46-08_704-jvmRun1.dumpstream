@@ -1,0 +1,9 @@
+# Created at 2022-10-10T16:46:09.630
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[0.520s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.'.
+
+# Created at 2022-10-10T16:46:09.633
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[0.520s][info][jfr,startup]'.
+
+# Created at 2022-10-10T16:46:09.633
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[0.520s][info][jfr,startup] Use jcmd 2772 JFR.dump name=allureCucumberSelenide_test__site__2022_10_10_164605 to copy recording data to file.'.
+

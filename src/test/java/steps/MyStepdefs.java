@@ -1,6 +1,8 @@
 package steps;
 
 import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -76,7 +78,9 @@ public class MyStepdefs {
     @То("^Ввести в поле поиска$")
     public void ввестиВПолеПоиска(List<String> arg) {
         for (int i = 0; i < arg.size(); i++) {
-            $x("//input[@name='q']").sendKeys(arg.get(i));
+         SelenideElement x = $x("//input[@name='q']");
+         x.click();
+            ElementsCollection xx =$$x("//input[@name='q']");
         }
     }
 
@@ -93,5 +97,13 @@ public class MyStepdefs {
             System.out.println("Login: "+ e.get("login") + " Password: " + e.get("password"));
         }
 
+    }
+
+    @io.cucumber.java.en.And("Something")
+    public void something() {
+    }
+
+    @Given("My first step")
+    public void myFirstStep() {
     }
 }
