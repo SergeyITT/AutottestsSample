@@ -56,17 +56,17 @@ public class MyStepdefs {
 
     @When("^Open yandex ru$")
     public void openYandexRu() {
-        open("https://yandex.ru");
+        open("https://ya.ru");
     }
 
     @Then("^Type \"([^\"]*)\" in the search string on yandex page$")
     public void typeInTheSearchStringOnYandexPage(String text) {
-        $x("//*[contains(@class, 'input__control ')]").sendKeys(text);
+        $x("//*[contains(@class,'search3__input mini-suggest__input')]").sendKeys(text);
     }
 
     @And("^Push Enter Button on yandex page$")
     public void pushEnterButtonOnYandexPage() {
-        $x("(//button[@data-bem])[1]").click();
+        $x("//*[contains(@class,'search3__input mini-suggest__input')]").sendKeys(Keys.ENTER);
 
     }
 

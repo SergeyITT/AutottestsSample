@@ -1,6 +1,6 @@
-[1660131989.936][INFO]: Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 20402
-[1660131989.937][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1660131990.315][INFO]: [0b5cac42952d9c64f932487ede8b0830] COMMAND InitSession {
+[1666091366.202][INFO]: Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 31931
+[1666091366.202][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1666091366.547][INFO]: [2a8b341d8b093e23dba5ea54d6e5bf17] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "acceptInsecureCerts": true,
@@ -11,7 +11,7 @@
             "extensions": [  ],
             "prefs": {
                "credentials_enable_service": false,
-               "download.default_directory": "C:\\Users\\neuro\\IdeaProjects\\AutottestsSample\\build\\downloads\\1660131989729_11244_1",
+               "download.default_directory": "C:\\Users\\neuro\\IdeaProjects\\AutottestsSample\\build\\downloads\\1666091365386_10512_1",
                "plugins.always_open_pdf_externally": true
             }
          },
@@ -28,7 +28,7 @@
          "extensions": [  ],
          "prefs": {
             "credentials_enable_service": false,
-            "download.default_directory": "C:\\Users\\neuro\\IdeaProjects\\AutottestsSample\\build\\downloads\\1660131989729_11244_1",
+            "download.default_directory": "C:\\Users\\neuro\\IdeaProjects\\AutottestsSample\\build\\downloads\\1666091365386_10512_1",
             "plugins.always_open_pdf_externally": true
          }
       },
@@ -38,7 +38,7 @@
       "takesScreenshot": true
    }
 }
-[1660131990.320][INFO]: Populating Preferences file: {
+[1666091366.552][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -60,7 +60,7 @@
       "enabled": false
    },
    "download": {
-      "default_directory": "C:\\Users\\neuro\\IdeaProjects\\AutottestsSample\\build\\downloads\\1660131989729_11244_1"
+      "default_directory": "C:\\Users\\neuro\\IdeaProjects\\AutottestsSample\\build\\downloads\\1666091365386_10512_1"
    },
    "plugins": {
       "always_open_pdf_externally": true
@@ -98,7 +98,7 @@
       "enabled": false
    }
 }
-[1660131990.320][INFO]: Populating Local State file: {
+[1666091366.552][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -108,7 +108,7 @@
       }
    }
 }
-[1660131990.341][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\neuro\AppData\Local\Temp\scoped_dir3340_1784782457" data:,
-[1660131990.932][INFO]: Failed to connect to Chrome. Attempting to kill it.
-[1660131991.012][INFO]: [0b5cac42952d9c64f932487ede8b0830] RESPONSE InitSession ERROR session not created: This version of ChromeDriver only supports Chrome version 97
-Current browser version is 104.0.5112.81 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+[1666091366.573][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\neuro\AppData\Local\Temp\scoped_dir32916_351975866" data:,
+[1666091367.233][INFO]: Failed to connect to Chrome. Attempting to kill it.
+[1666091367.324][INFO]: [2a8b341d8b093e23dba5ea54d6e5bf17] RESPONSE InitSession ERROR session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
